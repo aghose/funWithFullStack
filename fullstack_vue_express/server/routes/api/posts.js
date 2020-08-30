@@ -2,7 +2,7 @@
 const express = require('express');
 const mongodb = require('mongodb');
 
-const mongodbAPIKey = 'd49b58b5-ca44-4466-9a3c-6f6b2635c3d2';
+// const mongodbAPIKey = 'd49b58b5-ca44-4466-9a3c-6f6b2635c3d2';
 
 const router = express.Router();
 
@@ -30,7 +30,8 @@ async function loadPostsCollection(){
     //     // perform actions on the collection object
     //     client.close();
     //   });
-
+    
+    client.db('project0').collection('posts');
 }
 
 module.exports = router;
