@@ -20,7 +20,7 @@ router.get('/', async(req, res) =>{
 //Connect to mongoDB database asynchronously 
 async function loadPostsCollection(){
 
-    const uri = 'mongodb+srv://aghose001:aghose001@cluster0.p4dgu.azure.mongodb.net/project0?retryWrites=true&w=majority';
+    const uri = "mongodb+srv://aghose001:<password>@cluster0.p4dgu.azure.mongodb.net/project0?retryWrites=true&w=majority";
     const client = await mongodb.MongoClient.connect(
        uri , {useNewUrlParser: true}
     );
