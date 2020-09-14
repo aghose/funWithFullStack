@@ -13,7 +13,7 @@ class PostService {
                 resolve(
                     data.map(post => ({
                         ...post,
-                        createdAt: new Date(post.createdAt)
+                        createdAt: new Date(post.date)
                     }))
                 );
             })

@@ -27,7 +27,7 @@ router.post('/', async(req, res) =>{
             text: req.body.text,
             date: new Date()
         });
-        res.status(201).send;
+        res.status(201).send();
 
     } catch (error) {
         console.error(error);
@@ -36,12 +36,12 @@ router.post('/', async(req, res) =>{
 
 
 //Delete posts
-router.get('/:id', async(req, res) =>{
+router.delete('/:id', async(req, res) =>{
     try {
 
         const posts = await loadPostsCollection();
         await posts.deleteOne({_id: new mongodb.ObjectID(req.params.id)});
-        res.status(200);
+        res.status(200).send();
 
     } catch (err) {
         console.error(err);
