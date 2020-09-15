@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aghose/funWithFullStack.git"
+    "url": "https://github.com/aghose/funWithFullStack/fullstack_vue_express.git"
   },
   "author": "Akash Ghose",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aghose/funWithFullStack/issues"
+    "url": "https://github.com/aghose/funWithFullStack/fullstack_vue_express/issues"
   },
-  "homepage": "https://github.com/aghose/funWithFullStack#readme",
+  "homepage": "https://github.com/aghose/funWithFullStack/fullstack_vue_express#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
